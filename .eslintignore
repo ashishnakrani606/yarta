@@ -1,0 +1,4 @@
+**/node_modules/*
+src/setupTests.js
+tailwind.config.js
+postcss.config.js
