@@ -1,4 +1,5 @@
 import emailField from "assets/Images/email-field.png";
+import { Link } from "react-router-dom";
 
 const Experiance = (props : any) => {
   return (
@@ -14,7 +15,7 @@ const Experiance = (props : any) => {
             </p>                    
              <div className="border-2 rounded-xl border-[#5E5BF9] sm:max-w-[459px] max-w-[289px] mx-auto overflow-hidden flex justify-center  relative z-[99999] mt-10">
                 <input  type="email" placeholder="Enter your email"  className="md:py-[19px] py-3 sm:pl-6 pl-3 pr-2 sm:min-w-[260px] max-w-[152px] focus-visible:outline-none focus:outline-none text-black sm:placeholder:text-base placeholder:text-sm text-base placeholder:leading-tight leading-tight"/>
-                <button  className="bg-[#5E5BF9] py-3 sm:px-6 px-3 sm:min-w-[197px] md:text-xl text-base font-medium leading-snug">Try a Free Trial</button>
+                <Link to='https://app.yarta.ai/sign-up' target="blank" className="bg-[#5E5BF9] py-3 sm:px-6 px-3 sm:min-w-[197px] md:text-xl text-base font-medium leading-snug">Try a Free Trial</Link>
               </div>
               <p className="pt-2.5">7-day free trial. No credit card needed.</p>
           </div>         
