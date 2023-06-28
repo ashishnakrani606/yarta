@@ -31,17 +31,17 @@ const Events = () => {
               <ul className='flex flex-wrap text-lg mb-5 mt-[20px]'>
                 <li>
                   <a href='#September 2022' className='mr-4'>
-                    September 2022
+                    July 2023
                   </a>
                 </li>
                 <li>
                   <a href='#October 2022' className='mr-4'>
-                    October 2022
+                    August 2023
                   </a>
                 </li>
                 <li>
                   <a href='#November 2022' className='mr-4'>
-                    November 2022
+                    September 2023
                   </a>
                 </li>
               </ul>

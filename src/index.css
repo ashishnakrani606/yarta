@@ -324,7 +324,6 @@ header.header {
 .yarta_email_bg {
   background: linear-gradient(241.55deg, #5e5bf9 0%, #f0aefd 100%);
   box-shadow: -128px 0px 128px rgba(0, 0, 0, 0.12);
-  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 /* chats page end */
@@ -448,4 +447,8 @@ header.header {
   body .pad-bottom-set{
     padding-bottom: 0 !important;
   }
+}
+
+.jobs-boxes {
+ display: none;
 }

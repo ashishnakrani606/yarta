@@ -712,7 +712,7 @@ export const Content = {
     Platforms: [
       {
         title: "Yarta.ai",
-        link: "/market_intel",
+        link: "/",
         icon: Groups,
       },
     ],

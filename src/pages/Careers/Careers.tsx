@@ -113,17 +113,21 @@ const Careers = () => {
             <option value="Marketing">Marketing</option>
           </select>
         </div>
+       <div className='jobs-boxes' >
+        <div id="whr_embed_hook"></div>
+       </div>
         <div className='w-full' id="myTable">
           <div className="box border mb-8 rounded-md border-purple md:w-3/5 w-full mx-auto">
             <div className="flex items-center justify-between px-5 py-7">
               <div className="text-left">
                 <p className='inner-box text-purple text-gradient uppercase font-bold'>Engineering</p>
-                <p className="text-white my-2 font-bold text-2xl">Senior Frontend Engineer</p>
-                <p className="text-white-forty">Remote</p>
+                <p className="text-white my-2 font-bold text-2xl">CTO/Co-Founding Engineer</p>
+                <p className="text-white-forty">Location: Australia</p>
               </div>
               <div className="ml-10 div text-white text-xl bg-black-dark py-2 px-3">
                 <Link
-                  to="/careers/frontend"
+                  to="https://apply.workable.com/j/2392DDDBFD"
+                  target='blank'
                 >
                   View Job
                 </Link>
@@ -135,11 +139,12 @@ const Careers = () => {
               <div className="text-left">
                 <p className='inner-box text-purple text-gradient uppercase font-bold'>Engineering</p>
                 <p className="text-white my-2 font-bold text-2xl">Fullstack Engineer</p>
-                <p className="text-white-forty">Remote</p>
+                <p className="text-white-forty">Location: Australia</p>
               </div>
               <div className="ml-10 div text-white text-xl bg-black-dark py-2 px-3">
                 <Link
-                  to="/careers/Fullstack"
+                  to="https://apply.workable.com/j/2392DDDBFD"
+                  target='blank'
                 >
                   View Job
                 </Link>
@@ -151,11 +156,29 @@ const Careers = () => {
               <div className="text-left">
                 <p className='inner-box text-purple text-gradient uppercase font-bold'>Engineering</p>
                 <p className="text-white my-2 font-bold text-2xl">Quantitative Researcher</p>
-                <p className="text-white-forty">Remote</p>
+                <p className="text-white-forty">Location: Australia</p>
               </div>
               <div className="ml-10 div text-white text-xl bg-black-dark py-2 px-3">
                 <Link
-                  to="/careers/Quantitative-Researcher"
+                   to="https://apply.workable.com/j/2392DDDBFD"
+                   target='blank'
+                >
+                  View Job
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="box border mb-8 rounded-md border-purple md:w-3/5 w-full mx-auto">
+            <div className="flex items-center justify-between px-5 py-7">
+              <div className="text-left">
+                <p className='inner-box text-purple text-gradient uppercase font-bold'>Engineering</p>
+                <p className="text-white my-2 font-bold text-2xl">Senior Frontend Developer</p>
+                <p className="text-white-forty">Location: Australia</p>
+              </div>
+              <div className="ml-10 div text-white text-xl bg-black-dark py-2 px-3">
+                <Link
+                   to="https://apply.workable.com/j/2392DDDBFD"
+                   target='blank'
                 >
                   View Job
                 </Link>

@@ -71,6 +71,9 @@ const Home = () => {
             >
               <div className="text-white lg:text-6xl md:text-5xl text-3xl font-bold tracking-tight leading-10 max-w-[531px] w-full ">
                 {newHome.tradeDirectly.titleBeforeSpan}
+                <span className="md:hidden inline-block text-3xl font-bold">
+                  <span className="text-gradient pl-1">commodity trading</span>
+                </span>
                 <div className="hidden md:flex justify-center lg:justify-start items-center pt-2">
                   <span className="type xl:text-6xl lg:text-5xl sm:text-5xl text-3xl">
                     <Typewriter
@@ -87,10 +90,6 @@ const Home = () => {
                   </span>
                 </div>
               </div>
-              <span className="md:hidden block text-3xl font-bold">
-                {" "}
-                the<span className="text-gradient"> smart</span> way.{" "}
-              </span>
               <div className="w-full contents justify-center lg:justify-start">
                 <p className="text-white md:text-xl sm:text-xl text-center lg:text-left text-base mt-6 lg:max-w-[440px] w-full mx-auto sm:mx-0">
                   {newHome.tradeDirectly.subtitle}
@@ -202,7 +201,7 @@ const Home = () => {
 
       <div className="bg-black-darkest w-full h-full text-white relative md:mt-0 mt-10 bg-gradient overflow-hidden">
         <div className="flex flex-col lg:flex-row wrapper container-wrapper h-full">
-          <div className="md:w-full lg:w-2/3 flex-col text-center lg:text-left lg:pt-0 pt-8">
+          <div className="md:w-full lg:w-2/3 flex-col text-center lg:text-left lg:pt-0 pt-8 pb-11 md:pb-0">
             <div>
             <h2 className="text-3xl md:text-5xl font-semibold pt-4 tracking-[-0.02em] !leading-tight">
               Ready to experience Yarta?
@@ -211,15 +210,15 @@ const Home = () => {
               Test drive the Yarta.ai platform with a 7-day trial
             </p>         
             </div>
-            <div className="border-2 rounded-xl border-[#5E5BF9] sm:max-w-[459px] max-w-[289px] mx-auto lg:ml-0 overflow-hidden flex justify-center lg:justify-start relative z-[99999] mt-10">
+            <div className="border-2 rounded-xl border-[#5E5BF9] bg-[#5E5BF9] sm:max-w-[459px] max-w-[289px] mx-auto lg:ml-0 overflow-hidden flex justify-center lg:justify-start relative z-[99999] mt-10">
               <input  type="email" placeholder="Enter your email"  className="md:py-[19px] py-3 sm:pl-6 pl-3 pr-2 sm:min-w-[260px] max-w-[152px] focus-visible:outline-none focus:outline-none text-black sm:placeholder:text-base placeholder:text-sm text-base placeholder:leading-tight leading-tight"/>
-              <Link to='https://app.yarta.ai/sign-up' target="blank" className="bg-[#5E5BF9] py-3 sm:px-6 px-3 sm:min-w-[197px] md:text-xl text-base font-medium leading-snug">Try a Free Trial</Link>
+              <Link to='https://app.yarta.ai/sign-up' target="blank" className="flex items-center bg-[#5E5BF9] py-3 sm:px-6 px-3 sm:min-w-[197px] md:text-xl text-base font-medium leading-snug">Try a Free Trial</Link>
             </div>
             <p className="pt-2.5">7-day free trial. No credit card needed.</p>
           </div>
           <div
-            className="3xl:min-w-[48vw] 3xl-s:min-w-[43vw]  lg:translate-x-[45%]  lg:translate-y-[45px]
-            h-fit  align-bottom  translate-x-[31%] translate-y-[-49px]"
+            className="3xl:min-w-[48vw] 3xl-s:min-w-[43vw] lg:translate-x-[45%] lg:translate-y-[45px]
+            h-fit align-bottom translate-x-[31%] translate-y-[-49px] hidden md:block"
           >
             <div className="pt-20">
               <img
