@@ -126,7 +126,7 @@ const Careers = () => {
               </div>
               <div className="ml-10 div text-white text-xl bg-black-dark py-2 px-3">
                 <Link
-                  to="https://apply.workable.com/j/2392DDDBFD"
+                  to="https://apply.workable.com/yarta-pty-ltd/j/2392DDDBFD/"
                   target='blank'
                 >
                   View Job
@@ -143,7 +143,7 @@ const Careers = () => {
               </div>
               <div className="ml-10 div text-white text-xl bg-black-dark py-2 px-3">
                 <Link
-                  to="https://apply.workable.com/j/2392DDDBFD"
+                  to="https://apply.workable.com/yarta-pty-ltd/j/A6D7F0A005/"
                   target='blank'
                 >
                   View Job
@@ -160,7 +160,7 @@ const Careers = () => {
               </div>
               <div className="ml-10 div text-white text-xl bg-black-dark py-2 px-3">
                 <Link
-                   to="https://apply.workable.com/j/2392DDDBFD"
+                   to="https://apply.workable.com/yarta-pty-ltd/j/5EBEFF5FF7/"
                    target='blank'
                 >
                   View Job
@@ -177,7 +177,7 @@ const Careers = () => {
               </div>
               <div className="ml-10 div text-white text-xl bg-black-dark py-2 px-3">
                 <Link
-                   to="https://apply.workable.com/j/2392DDDBFD"
+                   to="https://apply.workable.com/yarta-pty-ltd/j/6FC6FED61B/"
                    target='blank'
                 >
                   View Job

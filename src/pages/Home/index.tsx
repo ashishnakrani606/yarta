@@ -17,16 +17,24 @@ import dashboardLending from "../../assets/Images/Landing_video1.mp4";
 import dashboardLending2 from "../../assets/Images/landing_video2.mp4";
 import Farmers from "components/Encrypted/farmers";
 import { Ticker } from "react-ts-tradingview-widgets";
+import { validateHeaderName } from "http";
 
 const Home = () => {
   const { FaqQuestion } = Content;
   const [expanded, setExpanded] = useState<false | number>(-1);
+  const [isEmail, setIsEmail] = useState('');
   const { newHome } = Content;
   const { newHomeMission } = Content;
   const { blockplatform } = Content;
 
   const [width, setWidth] = useState(window.innerWidth);
   const breakpoint = 620;
+
+
+  const handleEmailChange = (event:any) => {
+    setIsEmail(event.target.value)
+  };
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -38,6 +46,8 @@ const Home = () => {
     window.addEventListener("resize", handleResize);
     handleResize();
   });
+
+  
   const data = [
     {
       title: "CBOT Wheat Front Month Future xdf",
@@ -100,8 +110,8 @@ const Home = () => {
               </div>
               <div className="mt-10">
                 <div className="border-2 rounded-xl border-[#5E5BF9] overflow-hidden flex">
-                  <input  type="email" placeholder="Enter your email"  className="md:py-[19px] py-3 sm:pl-6 pl-3 pr-2 sm:min-w-[260px] sm:max-w-[152px] max-w-full w-full focus-visible:outline-none focus:outline-none text-black sm:placeholder:text-base placeholder:text-sm text-base placeholder:leading-tight leading-tight"/>
-                  <Link to='https://app.yarta.ai/sign-up' target="blank" className="block">
+                  <input onChange={(e) => handleEmailChange(e)}  type="email" placeholder="Enter your email"  className="md:py-[19px] py-3 sm:pl-6 pl-3 pr-2 sm:min-w-[260px] sm:max-w-[152px] max-w-full w-full focus-visible:outline-none focus:outline-none text-black sm:placeholder:text-base placeholder:text-sm text-base placeholder:leading-tight leading-tight"/>
+                  <Link to={`https://app.yarta.ai/sign-up?email=${isEmail}`} target="blank" className="block">
                   <button  className="bg-[#5E5BF9] py-3 sm:px-6 px-3 h-full sm:min-w-[197px] whitespace-nowrap md:text-xl text-base font-medium leading-snug">Try a Free Trial</button>
                   </Link>
                 </div>
@@ -123,6 +133,7 @@ const Home = () => {
                   className="rounded-md "
                   loop
                   muted
+                  playsInline
                 >
                   Your Browser does not support videos
                 </video>
@@ -134,6 +145,7 @@ const Home = () => {
                   autoPlay
                   loop
                   muted
+                  playsInline
                 >
                   Your Browser does not support videos
                 </video>
@@ -174,6 +186,7 @@ const Home = () => {
                   autoPlay
                   loop
                   muted
+                  playsInline
                 >
                 </video>  
             </div>
@@ -211,8 +224,8 @@ const Home = () => {
             </p>         
             </div>
             <div className="border-2 rounded-xl border-[#5E5BF9] bg-[#5E5BF9] sm:max-w-[459px] max-w-[289px] mx-auto lg:ml-0 overflow-hidden flex justify-center lg:justify-start relative z-[99999] mt-10">
-              <input  type="email" placeholder="Enter your email"  className="md:py-[19px] py-3 sm:pl-6 pl-3 pr-2 sm:min-w-[260px] max-w-[152px] focus-visible:outline-none focus:outline-none text-black sm:placeholder:text-base placeholder:text-sm text-base placeholder:leading-tight leading-tight"/>
-              <Link to='https://app.yarta.ai/sign-up' target="blank" className="flex items-center bg-[#5E5BF9] py-3 sm:px-6 px-3 sm:min-w-[197px] md:text-xl text-base font-medium leading-snug">Try a Free Trial</Link>
+              <input onChange={handleEmailChange} type="email" placeholder="Enter your email"  className="md:py-[19px] py-3 sm:pl-6 pl-3 pr-2 sm:min-w-[260px] max-w-[152px] focus-visible:outline-none focus:outline-none text-black sm:placeholder:text-base placeholder:text-sm text-base placeholder:leading-tight leading-tight"/>
+              <Link to={`https://app.yarta.ai/sign-up?email=${isEmail}`} target="blank" className="flex items-center bg-[#5E5BF9] py-3 sm:px-6 px-3 sm:min-w-[197px] md:text-xl text-base font-medium leading-snug">Try a Free Trial</Link>
             </div>
             <p className="pt-2.5">7-day free trial. No credit card needed.</p>
           </div>
