@@ -46,6 +46,7 @@ const Herosection = (props: any) => {
                 autoPlay
                 loop
                 muted
+                playsInline
               ></video>
             }
             {/* <button className="p-3 bg-white text-black-darkest font-bold flex items-center gap-4 md:pr-8 pr-2 min-w-[210px] rounded-[60px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">

@@ -53,6 +53,7 @@ const Powefulltool = (props: any) => {
               autoPlay
               loop
               muted
+              playsInline
             >            
           </video>
           :
