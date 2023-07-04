@@ -127,7 +127,7 @@ const Home = () => {
           </div> */}
           <div className="md:w-1/2 w-full lg:ml-20 md:ml-7">
             <div className="relative">
-                <video
+                {/* <video
                   src={wheet}
                   width="100%"
                   className="rounded-md md:hidden"
@@ -135,8 +135,17 @@ const Home = () => {
                   muted
                   playsInline
                 >
-                  Your Browser does not support videos
-                </video>
+                </video> */}
+                 <video
+                  src={MoneyVideo}
+                  width="100%"
+                  className="rounded-md "
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                </video>  
                 <video
                   src={wheet}
                   width="100%"
@@ -146,7 +155,6 @@ const Home = () => {
                   muted
                   playsInline
                 >
-                  Your Browser does not support videos
                 </video>
               <div className="rounded-md absolute left-0 right-0 top-0 bottom-0 w-full"></div>
             </div>
