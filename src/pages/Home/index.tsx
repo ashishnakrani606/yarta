@@ -132,6 +132,7 @@ const Home = () => {
                   width="100%"
                   className="rounded-md"
                   loop
+                  autoPlay
                   muted
                   playsInline
                 >
@@ -176,7 +177,7 @@ const Home = () => {
             <div className="relative">
               {/* <img src={moneySanityVideo} /> */}
                <video
-                  src={MoneyVideo}
+                  src={wheet}
                   width="100%"
                   className="rounded-md "
                   autoPlay
