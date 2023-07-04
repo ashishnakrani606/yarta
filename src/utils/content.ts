@@ -690,7 +690,7 @@ export const Content = {
     title: "Keep in touch",
     subtitle: "Feel free to",
     subtitlespan: " reach out ",
-    subtitle2: "if you have questions, feedback, or simply have a chat.",
+    subtitle2: "Feel free to reach out if you have questions, feedback, or simply to have a chat",
     socials: [
       { title: "Twitter", href: "https://twitter.com/yarta_io" },
       { title: "Linkedin", href: "https://www.linkedin.com/company/yarta" },

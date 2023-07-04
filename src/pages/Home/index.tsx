@@ -27,7 +27,7 @@ const Home = () => {
   const { newHomeMission } = Content;
   const { blockplatform } = Content;
 
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
   const breakpoint = 620;
 
 
@@ -45,6 +45,7 @@ const Home = () => {
     };
     window.addEventListener("resize", handleResize);
     handleResize();
+    setWidth(window.innerWidth)
   });
 
   
@@ -110,7 +111,7 @@ const Home = () => {
               </div>
               <div className="mt-10">
                 <div className="border-2 rounded-xl border-[#5E5BF9] overflow-hidden flex">
-                  <input onChange={(e) => handleEmailChange(e)}  type="email" placeholder="Enter your email"  className="md:py-[19px] py-3 sm:pl-6 pl-3 pr-2 sm:min-w-[260px] sm:max-w-[152px] max-w-full w-full focus-visible:outline-none focus:outline-none text-black sm:placeholder:text-base placeholder:text-sm text-base placeholder:leading-tight leading-tight"/>
+                  <input onChange={(e) => handleEmailChange(e)}  type="email" placeholder="Enter your email"  className="border-radius-left md:py-[19px] py-3 sm:pl-6 pl-3 pr-2 sm:min-w-[260px] sm:max-w-[152px] max-w-full w-full focus-visible:outline-none focus:outline-none text-black sm:placeholder:text-base placeholder:text-sm text-base placeholder:leading-tight leading-tight"/>
                   <Link to={`https://app.yarta.ai/sign-up?email=${isEmail}`} target="blank" className="block">
                   <button  className="bg-[#5E5BF9] py-3 sm:px-6 px-3 h-full sm:min-w-[197px] whitespace-nowrap md:text-xl text-base font-medium leading-snug">Try a Free Trial</button>
                   </Link>
@@ -126,22 +127,20 @@ const Home = () => {
           </div> */}
           <div className="md:w-1/2 w-full lg:ml-20 md:ml-7">
             <div className="relative">
-              {width < breakpoint ? (
                 <video
                   src={wheet}
                   width="100%"
-                  className="rounded-md "
+                  className="rounded-md md:hidden"
                   loop
                   muted
                   playsInline
                 >
                   Your Browser does not support videos
                 </video>
-              ) : (
                 <video
                   src={wheet}
                   width="100%"
-                  className="rounded-md "
+                  className="rounded-md hidden md:block"
                   autoPlay
                   loop
                   muted
@@ -149,7 +148,6 @@ const Home = () => {
                 >
                   Your Browser does not support videos
                 </video>
-              )}
               <div className="rounded-md absolute left-0 right-0 top-0 bottom-0 w-full"></div>
             </div>
           </div>
@@ -224,7 +222,7 @@ const Home = () => {
             </p>         
             </div>
             <div className="border-2 rounded-xl border-[#5E5BF9] bg-[#5E5BF9] sm:max-w-[459px] max-w-[289px] mx-auto lg:ml-0 overflow-hidden flex justify-center lg:justify-start relative z-[99999] mt-10">
-              <input onChange={handleEmailChange} type="email" placeholder="Enter your email"  className="md:py-[19px] py-3 sm:pl-6 pl-3 pr-2 sm:min-w-[260px] max-w-[152px] focus-visible:outline-none focus:outline-none text-black sm:placeholder:text-base placeholder:text-sm text-base placeholder:leading-tight leading-tight"/>
+              <input onChange={handleEmailChange} type="email" placeholder="Enter your email"  className=" border-radius-left md:py-[19px] py-3 sm:pl-6 pl-3 pr-2 sm:min-w-[260px] max-w-[152px] focus-visible:outline-none focus:outline-none text-black sm:placeholder:text-base placeholder:text-sm text-base placeholder:leading-tight leading-tight"/>
               <Link to={`https://app.yarta.ai/sign-up?email=${isEmail}`} target="blank" className="flex items-center bg-[#5E5BF9] py-3 sm:px-6 px-3 sm:min-w-[197px] md:text-xl text-base font-medium leading-snug">Try a Free Trial</Link>
             </div>
             <p className="pt-2.5">7-day free trial. No credit card needed.</p>
