@@ -59,6 +59,7 @@ const About = () => {
                   autoPlay
                   loop
                   muted
+                  playsInline
                 >
                   Your Browser does not support videos
                 </video>
@@ -75,6 +76,7 @@ const About = () => {
                 autoPlay
                 loop
                 muted
+                playsInline
               >
                 Your Browser does not support videos
               </video>
