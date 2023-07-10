@@ -16,7 +16,7 @@ import {
 import Weather from "../assets/Icons/Weather";
 import Chart from "../assets/Icons/Chart";
 import Track from "../assets/Icons/Track";
-import Mic from "../assets/Icons/Mic";
+import presentationChartLine from "../assets/Icons/presentationChartLine";
 import Chat from "../assets/Icons/Chat";
 import Mail from "../assets/Icons/Mail";
 import Calendar from "../assets/Icons/Calendar";
@@ -148,7 +148,7 @@ export const NavLinks = [
         title: "Market quotes board",
         subtitle: "Track global markets in real-time",
         link: "/market_quotes_board",
-        icon: Mic,
+        icon: presentationChartLine,
       },
       {
         title: "Market chats",
@@ -223,7 +223,7 @@ export const Content = {
       {
         title: "How much does a subscription cost?",
         subtitle: [
-          "The Yarta.ai platform is available at an affordable price of $69 per month (USD). We also offer attractive discounts on annual subscriptions, making it even more cost-effective for long-term users. If you're interested in multiple subscriptions for your company, we provide tailored solutions and special pricing. Please reach out to our team at support@yarta.io, and we'll be happy to assist you with your specific requirements.",
+          "The Yarta.ai platform is available at an affordable price of $69 per month (USD). We also offer attractive discounts on annual subscriptions, making it even more cost-effective for long-term users. If you're interested in multiple subscriptions for your company, we provide tailored solutions and special pricing. Please reach out to our team at support@yarta.ai, and we'll be happy to assist you with your specific requirements.",
         ],
       },
       {
@@ -692,7 +692,7 @@ export const Content = {
     subtitlespan: " reach out ",
     subtitle2: "Feel free to reach out if you have questions, feedback, or simply to have a chat",
     socials: [
-      { title: "Twitter", href: "https://twitter.com/yarta_io" },
+      { title: "Twitter", href: "https://twitter.com/Yarta_ai" },
       { title: "Linkedin", href: "https://www.linkedin.com/company/yarta" },
     ],
   },

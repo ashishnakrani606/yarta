@@ -130,23 +130,12 @@ const Home = () => {
                 <video
                   src={wheet}
                   width="100%"
-                  className="rounded-md"
-                  loop
-                  autoPlay
-                  muted
-                  playsInline
-                >
-                </video>
-                <video
-                  src={MoneyVideo}
-                  width="100%"
-                  className="rounded-md"
+                  className="rounded-md "
                   autoPlay
                   loop
                   muted
                   playsInline
-                >
-                </video>
+                ></video>
               <div className="rounded-md absolute left-0 right-0 top-0 bottom-0 w-full"></div>
             </div>
           </div>
@@ -177,7 +166,7 @@ const Home = () => {
             <div className="relative">
               {/* <img src={moneySanityVideo} /> */}
                <video
-                  src={wheet}
+                  src={MoneyVideo}
                   width="100%"
                   className="rounded-md "
                   autoPlay

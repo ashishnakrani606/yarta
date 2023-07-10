@@ -7,7 +7,6 @@ import { useState, useEffect } from 'react';
 const About = () => {
 
   const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 620;
 
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth));
@@ -25,15 +24,14 @@ const About = () => {
           <img className="mt-0 mb-8 h-16 md:h-18" src={flage}/>
           <h1 className="text-white font-light lg:text-5xl md:text-3xl text-2xl">
             <div className="lg:max-w-6xl">
-              Our mission is to simplify the global agricultural trading and financing process.
+              Our mission is to help farmers, traders and agricultural companies grow on their terms.
             </div>
           </h1>
           <p className="text-white md:text-xl text-lg md:my-5 mt-3 mb-10">
             <div className="lg:max-w-5xl ">
-              Better data leads to more informed decision-making. Automated intelligence 
-              elevates productivity, reduces errors, and improves the bottom line. We help 
-              deliver value with better technology by providing an ecosystem to trade, 
-              finance, and hedge commodities.
+              High quality information and advice leads to improved decision-making. At Yarta,
+              we’re developing a suit of tools to turbocharge productivity across the agricultural
+              supply chain from farming, trading to supply chain logistics.
             </div>
           </p>
         </div>
@@ -54,17 +52,6 @@ const About = () => {
           </div>
           <div className="border-gradient md:w-1/2 w-full lg:ml-20 md:ml-7">
             <div className="relative  ">
-              { width < breakpoint ? 
-                <video
-                  src={wheet}
-                  width="100%"
-                  className="rounded-md "
-                  loop
-                  muted
-                >
-                  Your Browser does not support videos
-                </video>
-                :
                 <video
                   src={wheet}
                   width="100%"
@@ -75,24 +62,12 @@ const About = () => {
                 >
                   Your Browser does not support videos
                 </video>
-              }
               <div className="bg-black-background rounded-md absolute left-0 right-0 top-0 bottom-0 w-full"></div>
             </div>
           </div>
         </div>
         <div className="lg:my-20 mt-10 mb-10 w-full flex md:flex-row flex-col-reverse items-center">
           <div className="relative border-gradient md:w-1/2 w-full">
-            { width < breakpoint ? 
-              <video
-                src={ship}
-                width="100%"
-                className="rounded-md "
-                loop
-                muted
-              >
-                Your Browser does not support videos
-              </video>
-              :
               <video
                 src={ship}
                 width="100%"
@@ -103,17 +78,15 @@ const About = () => {
               >
                 Your Browser does not support videos
               </video>
-            }
             <div className="bg-black-background rounded-md absolute left-0 right-0 top-0 -bottom-0.5 w-full"></div>
           </div>
           <div className="lg:ml-20 md:ml-6 md:w-1/2 w-full md:text-left text-center">
             <p className="text-white font-bold lg:text-5xl md:text-3xl text-2xl">
-              Trade, finance, hedge on your terms
+              Make informed decision
             </p>
             <p className="text-white-forty md:text-xl text-lg md:my-7 mt-2 mb-10">
-              Our goal is to empower agriculture industry members to scale with
-              an easy to use platform for trading, financing, and hedging global
-              agricultural commodities.
+              Our goal is to the agricultural industry members with a central workspace for
+              farming and global markets decision making.
             </p>
           </div>
         </div>

@@ -26,7 +26,7 @@ function Header() {
     <header className="box-border top-0 w-full 2xl:h-24 py-6 bg-black-darkest header">
       <div className="flex items-center justify-between">
         <a
-          href="https://yarta.io/"
+          href="https://yarta.ai/"
           rel="noreferrer"
           className="xl:w-auto lg:w-24"
         >
